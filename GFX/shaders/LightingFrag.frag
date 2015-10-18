@@ -1,3 +1,5 @@
+#version 120
+
 varying vec3 TN;
 varying vec3 pos;
 

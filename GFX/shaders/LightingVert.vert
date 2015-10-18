@@ -1,3 +1,5 @@
+#version 120
+
 uniform mat4 uBone[70];
 
 uniform mat4 mWorld;

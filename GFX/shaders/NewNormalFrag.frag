@@ -1,3 +1,5 @@
+#version 120
+
 varying mat3 TNTB;
 varying vec3 pos;
 
