@@ -1,5 +1,5 @@
 #include "../Room.h"
-#include "Room2testRoom2.h"
+#include "Room2testroom2.h"
 
 RMesh* Room2testRoom2::baseRMesh = nullptr;
 

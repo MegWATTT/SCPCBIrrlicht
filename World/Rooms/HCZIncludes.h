@@ -4,8 +4,8 @@
 //HCZ
 #include "HCZ/Room008.h"
 #include "HCZ/RoomCoffin.h"
-#include "HCZ/RoomEndRoom2.h"
-#include "HCZ/RoomTestRoom.h"
+#include "HCZ/RoomEndroom2.h"
+#include "HCZ/RoomTestroom.h"
 #include "HCZ/RoomTunnel.h"
 #include "HCZ/RoomTunnel2.h"
 #include "HCZ/Room035.h"

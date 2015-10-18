@@ -16,7 +16,7 @@
 #include "LCZ/Room2doors.h"
 #include "LCZ/Room2scps.h"
 #include "LCZ/Room3storage.h"
-#include "LCZ/Room2testRoom2.h"
+#include "LCZ/Room2testroom2.h"
 #include "LCZ/Room3.h"
 #include "LCZ/Room3_2.h"
 #include "LCZ/Room4.h"

@@ -228,7 +228,7 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 	deferredLightSphere->setVisible(false);
 
     blinkMeterIMG = irrDriver->getTexture("GFX/BlinkMeter.jpg");
-    staminaMeterIMG = irrDriver->getTexture("GFX/staminaMeter.jpg");
+    staminaMeterIMG = irrDriver->getTexture("GFX/StaminaMeter.jpg");
 
 	//Add test model
 
@@ -240,52 +240,52 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 	Item::setDriver(irrDriver);
 	Item::setDimensions(mainWidth,mainHeight);
 
-    Item420::setMeshNode(genItemNode(std::string("GFX/Items/420.x"),std::string(""),0.015f*RoomScale));
-	ItemKey1::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycard1.jpg"),0.012f*RoomScale));
-	ItemKey2::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycard2.jpg"),0.012f*RoomScale));
-	ItemKey3::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycard3.jpg"),0.012f*RoomScale));
-	ItemKey4::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycard4.jpg"),0.012f*RoomScale));
-	ItemKey5::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycard5.jpg"),0.012f*RoomScale));
-	ItemMisc::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/card.jpg"),0.012f*RoomScale));
-	ItemKey6::setMeshNode(genItemNode(std::string("GFX/Items/keycard.x"),std::string("GFX/Items/keycardomni.jpg"),0.012f*RoomScale));
-	ItemScp860::setMeshNode(genItemNode(std::string("GFX/Items/key.b3d"),std::string(""),0.03f*RoomScale));
-	ItemPaper::setMeshNode(genItemNode(std::string("GFX/Items/paper.x"),std::string(""),0.09f*RoomScale));
-	ItemVest::setMeshNode(genItemNode(std::string("GFX/Items/vest.x"),std::string("GFX/NPCs/MTFbody.jpg"),0.6f*RoomScale));
-	ItemFinevest::setMeshNode(genItemNode(std::string("GFX/Items/vest.x"),std::string("GFX/NPCs/MTFbody.jpg"),0.66f*RoomScale));
-	ItemVeryfinevest::setMeshNode(genItemNode(std::string("GFX/Items/vest.x"),std::string("GFX/NPCs/MTFbody.jpg"),0.75f*RoomScale));
-	ItemHazmatsuit::setMeshNode(genItemNode(std::string("GFX/Items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
-	ItemHazmatsuit2::setMeshNode(genItemNode(std::string("GFX/Items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
-	ItemHazmatsuit3::setMeshNode(genItemNode(std::string("GFX/Items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
-	ItemCup::setMeshNode(genItemNode(std::string("GFX/Items/cup.x"),std::string(""),1.2f*RoomScale));
-	ItemEmptycup::setMeshNode(genItemNode(std::string("GFX/Items/cup.x"),std::string(""),1.2f*RoomScale));
-	ItemScp500::setMeshNode(genItemNode(std::string("GFX/Items/pill.b3d"),std::string(""),0.03f*RoomScale));
-	ItemFirstaid::setMeshNode(genItemNode(std::string("GFX/Items/firstaid.x"),std::string(""),1.5f*RoomScale));
-	ItemFinefirstaid::setMeshNode(genItemNode(std::string("GFX/Items/firstaid.x"),std::string(""),0.9f*RoomScale));
-	ItemFirstaid2::setMeshNode(genItemNode(std::string("GFX/Items/firstaid.x"),std::string("GFX/Items/firstaidkit2.jpg"),0.9f*RoomScale));
-	ItemVeryfinefirstaid::setMeshNode(genItemNode(std::string("GFX/Items/eyedrops.b3d"),std::string("GFX/Items/bottle.jpg"),0.06f*RoomScale));
-	ItemGasmask::setMeshNode(genItemNode(std::string("GFX/Items/gasmask.b3d"),std::string(""),0.6f*RoomScale));
-	ItemSupergasmask::setMeshNode(genItemNode(std::string("GFX/Items/gasmask.b3d"),std::string(""),0.63f*RoomScale));
-	ItemGasmask3::setMeshNode(genItemNode(std::string("GFX/Items/gasmask.b3d"),std::string(""),0.63f*RoomScale));
-	ItemBat::setMeshNode(genItemNode(std::string("GFX/Items/battery.x"),std::string(""),0.006f*RoomScale));
-	ItemScp148::setMeshNode(genItemNode(std::string("GFX/Items/metalpanel.x"),std::string(""),0.117187f*RoomScale));
-	ItemScp148ingot::setMeshNode(genItemNode(std::string("GFX/Items/scp148.x"),std::string(""),0.117187f*RoomScale));
-	ItemNav::setMeshNode(genItemNode(std::string("GFX/Items/navigator.x"),std::string(""),0.024f*RoomScale));
-	ItemRadio::setMeshNode(genItemNode(std::string("GFX/Items/radio.x"),std::string(""),30.0f*RoomScale));
-	ItemFineradio::setMeshNode(genItemNode(std::string("GFX/Items/radio.x"),std::string(""),0.03f*RoomScale));
-	ItemVeryfineradio::setMeshNode(genItemNode(std::string("GFX/Items/radio.x"),std::string(""),0.03f*RoomScale));
-	Item18vradio::setMeshNode(genItemNode(std::string("GFX/Items/radio.x"),std::string(""),0.036f*RoomScale));
-	ItemCigarette::setMeshNode(genItemNode(std::string("GFX/Items/420.x"),std::string(""),0.012f*RoomScale));
-	Item420s::setMeshNode(genItemNode(std::string("GFX/Items/420.x"),std::string(""),0.012f*RoomScale));
-	ItemHand::setMeshNode(genItemNode(std::string("GFX/Items/severedhand.b3d"),std::string(""),1.2f*RoomScale));
-	ItemHand2::setMeshNode(genItemNode(std::string("GFX/Items/severedhand.b3d"),std::string("GFX/Items/shand2.png"),1.2f*RoomScale));
-	Item18vbat::setMeshNode(genItemNode(std::string("GFX/Items/battery.x"),std::string(""),0.009f*RoomScale));
-	ItemKillbat::setMeshNode(genItemNode(std::string("GFX/Items/battery.x"),std::string(""),0.009f*RoomScale));
-	ItemFineeyedrops::setMeshNode(genItemNode(std::string("GFX/Items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
-	ItemSupereyedrops::setMeshNode(genItemNode(std::string("GFX/Items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
-	ItemEyedrops::setMeshNode(genItemNode(std::string("GFX/Items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
-	ItemScp714::setMeshNode(genItemNode(std::string("GFX/Items/scp714.b3d"),std::string(""),9.0f*RoomScale));
-	ItemScp1025::setMeshNode(genItemNode(std::string("GFX/Items/scp1025.b3d"),std::string(""),3.0f*RoomScale));
-	ItemScp513::setMeshNode(genItemNode(std::string("GFX/Items/513.x"),std::string(""),3.0f*RoomScale));
+    Item420::setMeshNode(genItemNode(std::string("GFX/items/420.x"),std::string(""),0.015f*RoomScale));
+	ItemKey1::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycard1.jpg"),0.012f*RoomScale));
+	ItemKey2::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycard2.jpg"),0.012f*RoomScale));
+	ItemKey3::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycard3.jpg"),0.012f*RoomScale));
+	ItemKey4::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycard4.jpg"),0.012f*RoomScale));
+	ItemKey5::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycard5.jpg"),0.012f*RoomScale));
+	ItemMisc::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/card.jpg"),0.012f*RoomScale));
+	ItemKey6::setMeshNode(genItemNode(std::string("GFX/items/keycard.x"),std::string("GFX/items/keycardomni.jpg"),0.012f*RoomScale));
+	ItemScp860::setMeshNode(genItemNode(std::string("GFX/items/key.b3d"),std::string(""),0.03f*RoomScale));
+	ItemPaper::setMeshNode(genItemNode(std::string("GFX/items/paper.x"),std::string(""),0.09f*RoomScale));
+	ItemVest::setMeshNode(genItemNode(std::string("GFX/items/vest.x"),std::string("GFX/npcs/MTFbody.jpg"),0.6f*RoomScale));
+	ItemFinevest::setMeshNode(genItemNode(std::string("GFX/items/vest.x"),std::string("GFX/npcs/MTFbody.jpg"),0.66f*RoomScale));
+	ItemVeryfinevest::setMeshNode(genItemNode(std::string("GFX/items/vest.x"),std::string("GFX/npcs/MTFbody.jpg"),0.75f*RoomScale));
+	ItemHazmatsuit::setMeshNode(genItemNode(std::string("GFX/items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
+	ItemHazmatsuit2::setMeshNode(genItemNode(std::string("GFX/items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
+	ItemHazmatsuit3::setMeshNode(genItemNode(std::string("GFX/items/hazmat.b3d"),std::string(""),0.39f*RoomScale));
+	ItemCup::setMeshNode(genItemNode(std::string("GFX/items/cup.x"),std::string(""),1.2f*RoomScale));
+	ItemEmptycup::setMeshNode(genItemNode(std::string("GFX/items/cup.x"),std::string(""),1.2f*RoomScale));
+	ItemScp500::setMeshNode(genItemNode(std::string("GFX/items/pill.b3d"),std::string(""),0.03f*RoomScale));
+	ItemFirstaid::setMeshNode(genItemNode(std::string("GFX/items/firstaid.x"),std::string(""),1.5f*RoomScale));
+	ItemFinefirstaid::setMeshNode(genItemNode(std::string("GFX/items/firstaid.x"),std::string(""),0.9f*RoomScale));
+	ItemFirstaid2::setMeshNode(genItemNode(std::string("GFX/items/firstaid.x"),std::string("GFX/items/firstaidkit2.jpg"),0.9f*RoomScale));
+	ItemVeryfinefirstaid::setMeshNode(genItemNode(std::string("GFX/items/eyedrops.b3d"),std::string("GFX/items/bottle.jpg"),0.06f*RoomScale));
+	ItemGasmask::setMeshNode(genItemNode(std::string("GFX/items/gasmask.b3d"),std::string(""),0.6f*RoomScale));
+	ItemSupergasmask::setMeshNode(genItemNode(std::string("GFX/items/gasmask.b3d"),std::string(""),0.63f*RoomScale));
+	ItemGasmask3::setMeshNode(genItemNode(std::string("GFX/items/gasmask.b3d"),std::string(""),0.63f*RoomScale));
+	ItemBat::setMeshNode(genItemNode(std::string("GFX/items/battery.x"),std::string(""),0.006f*RoomScale));
+	ItemScp148::setMeshNode(genItemNode(std::string("GFX/items/metalpanel.x"),std::string(""),0.117187f*RoomScale));
+	ItemScp148ingot::setMeshNode(genItemNode(std::string("GFX/items/scp148.x"),std::string(""),0.117187f*RoomScale));
+	ItemNav::setMeshNode(genItemNode(std::string("GFX/items/navigator.x"),std::string(""),0.024f*RoomScale));
+	ItemRadio::setMeshNode(genItemNode(std::string("GFX/items/radio.x"),std::string(""),30.0f*RoomScale));
+	ItemFineradio::setMeshNode(genItemNode(std::string("GFX/items/radio.x"),std::string(""),0.03f*RoomScale));
+	ItemVeryfineradio::setMeshNode(genItemNode(std::string("GFX/items/radio.x"),std::string(""),0.03f*RoomScale));
+	Item18vradio::setMeshNode(genItemNode(std::string("GFX/items/radio.x"),std::string(""),0.036f*RoomScale));
+	ItemCigarette::setMeshNode(genItemNode(std::string("GFX/items/420.x"),std::string(""),0.012f*RoomScale));
+	Item420s::setMeshNode(genItemNode(std::string("GFX/items/420.x"),std::string(""),0.012f*RoomScale));
+	ItemHand::setMeshNode(genItemNode(std::string("GFX/items/severedhand.b3d"),std::string(""),1.2f*RoomScale));
+	ItemHand2::setMeshNode(genItemNode(std::string("GFX/items/severedhand.b3d"),std::string("GFX/items/shand2.png"),1.2f*RoomScale));
+	Item18vbat::setMeshNode(genItemNode(std::string("GFX/items/battery.x"),std::string(""),0.009f*RoomScale));
+	ItemKillbat::setMeshNode(genItemNode(std::string("GFX/items/battery.x"),std::string(""),0.009f*RoomScale));
+	ItemFineeyedrops::setMeshNode(genItemNode(std::string("GFX/items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
+	ItemSupereyedrops::setMeshNode(genItemNode(std::string("GFX/items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
+	ItemEyedrops::setMeshNode(genItemNode(std::string("GFX/items/eyedrops.b3d"),std::string(""),0.036f*RoomScale));
+	ItemScp714::setMeshNode(genItemNode(std::string("GFX/items/scp714.b3d"),std::string(""),9.0f*RoomScale));
+	ItemScp1025::setMeshNode(genItemNode(std::string("GFX/items/scp1025.b3d"),std::string(""),3.0f*RoomScale));
+	ItemScp513::setMeshNode(genItemNode(std::string("GFX/items/513.x"),std::string(""),3.0f*RoomScale));
 
 	for (irr::u32 ui=0;ui<1;ui++) {
 
@@ -337,23 +337,23 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 #if 1
 	//LCZ
 	/*RoomStart*/rme = loadRMesh(std::string("GFX/map/173_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); RoomStart::setBase(rme);
-	/*Room2storage*/rme = loadRMesh(std::string("GFX/map/Room2storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2storage::setBase(rme);
-	/*Room3storage*/rme = loadRMesh(std::string("GFX/map/Room3storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3storage::setBase(rme);
-	/*Room012*/rme = loadRMesh(std::string("GFX/map/Room012_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room012::setBase(rme);
-	/*Room2*/rme = loadRMesh(std::string("GFX/map/Room2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2::setBase(rme);
-	/*Room2_2*/rme = loadRMesh(std::string("GFX/map/Room2_2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2_2::setBase(rme);
-	/*Room2c*/rme = loadRMesh(std::string("GFX/map/Room2C_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2c::setBase(rme);
-	/*Room2closets*/rme = loadRMesh(std::string("GFX/map/Room2closets_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2closets::setBase(rme);
-	/*Room2elevator*/rme = loadRMesh(std::string("GFX/map/Room2elevator_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2elevator::setBase(rme);
-	/*Room2doors*/rme = loadRMesh(std::string("GFX/map/Room2doors_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2doors::setBase(rme);
-	/*Room2scps*/rme = loadRMesh(std::string("GFX/map/Room2scps_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2scps::setBase(rme);
-	/*Room3storage*/rme = loadRMesh(std::string("GFX/map/Room3storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3storage::setBase(rme);
-	/*Room2testRoom2*/rme = loadRMesh(std::string("GFX/map/Room2testRoom2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2testRoom2::setBase(rme);
-	/*Room3*/rme = loadRMesh(std::string("GFX/map/Room3_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3::setBase(rme);
-	/*Room3_2*/rme = loadRMesh(std::string("GFX/map/Room3_2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3_2::setBase(rme);
-	/*Room4*/rme = loadRMesh(std::string("GFX/map/Room4_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room4::setBase(rme);
-	/*Roompj*/rme = loadRMesh(std::string("GFX/map/Roompj_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Roompj::setBase(rme);
-	/*Room914*/rme = loadRMesh(std::string("GFX/map/machineRoom_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room914::setBase(rme);
+	/*Room2storage*/rme = loadRMesh(std::string("GFX/map/room2storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2storage::setBase(rme);
+	/*Room3storage*/rme = loadRMesh(std::string("GFX/map/room3storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3storage::setBase(rme);
+	/*Room012*/rme = loadRMesh(std::string("GFX/map/room012_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room012::setBase(rme);
+	/*Room2*/rme = loadRMesh(std::string("GFX/map/room2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2::setBase(rme);
+	/*Room2_2*/rme = loadRMesh(std::string("GFX/map/room2_2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2_2::setBase(rme);
+	/*Room2c*/rme = loadRMesh(std::string("GFX/map/room2C_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2c::setBase(rme);
+	/*Room2closets*/rme = loadRMesh(std::string("GFX/map/room2closets_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2closets::setBase(rme);
+	/*Room2elevator*/rme = loadRMesh(std::string("GFX/map/room2elevator_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2elevator::setBase(rme);
+	/*Room2doors*/rme = loadRMesh(std::string("GFX/map/room2doors_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2doors::setBase(rme);
+	/*Room2scps*/rme = loadRMesh(std::string("GFX/map/room2scps_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2scps::setBase(rme);
+	/*Room3storage*/rme = loadRMesh(std::string("GFX/map/room3storage_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3storage::setBase(rme);
+	/*Room2testRoom2*/rme = loadRMesh(std::string("GFX/map/room2testroom2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room2testRoom2::setBase(rme);
+	/*Room3*/rme = loadRMesh(std::string("GFX/map/room3_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3::setBase(rme);
+	/*Room3_2*/rme = loadRMesh(std::string("GFX/map/room3_2_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room3_2::setBase(rme);
+	/*Room4*/rme = loadRMesh(std::string("GFX/map/room4_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room4::setBase(rme);
+	/*Roompj*/rme = loadRMesh(std::string("GFX/map/roompj_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Roompj::setBase(rme);
+	/*Room914*/rme = loadRMesh(std::string("GFX/map/machineroom_opt.rm2"),irrFileSystem,irrSmgr,roomTextures,roomShaders); Room914::setBase(rme);
 #endif
 #if 0
 	//HCZ
@@ -415,14 +415,14 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 
     NPC::owner = this;
     NPC::dynamics = dynamics;
-    NPC096::baseNode = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/NPCs/scp096.b3d"));
+    NPC096::baseNode = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/npcs/scp096.b3d"));
     setupForHWSkinning(NPC096::baseNode->getMesh());
 
-    NPC096::baseNode->getMaterial(0).setTexture(1,irrDriver->getTexture("GFX/NPCs/normal_flat.png"));
-    NPC096::baseNode->getMaterial(0).setTexture(2,irrDriver->getTexture("GFX/NPCs/SCP096_specular.png"));
+    NPC096::baseNode->getMaterial(0).setTexture(1,irrDriver->getTexture("GFX/npcs/normal_flat.png"));
+    NPC096::baseNode->getMaterial(0).setTexture(2,irrDriver->getTexture("GFX/npcs/SCP096_specular.png"));
 
-    NPC096::baseNode->getMaterial(1).setTexture(1,irrDriver->getTexture("GFX/NPCs/normal_flat.png"));
-    NPC096::baseNode->getMaterial(1).setTexture(2,irrDriver->getTexture("GFX/NPCs/SCP096_specular.png"));
+    NPC096::baseNode->getMaterial(1).setTexture(1,irrDriver->getTexture("GFX/npcs/normal_flat.png"));
+    NPC096::baseNode->getMaterial(1).setTexture(2,irrDriver->getTexture("GFX/npcs/SCP096_specular.png"));
 
     setupForNormalsLighting(NPC096::baseNode);
 
@@ -437,14 +437,14 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 
     NPC::owner = this;
     NPC::dynamics = dynamics;
-    NPC178::baseNode = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/NPCs/npc178.b3d"));
+    NPC178::baseNode = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/npcs/npc178.b3d"));
     setupForHWSkinning(NPC178::baseNode->getMesh());
     NPC178::baseNode->setMaterialType(plainLightShader);
     setupForPlainLighting(NPC178::baseNode);
     NPC178::baseNode->setScale(irr::core::vector3df(0.45f*RoomScale,0.45f*RoomScale,0.45f*RoomScale));
     NPC178::baseNode->setAnimationSpeed(0.f); //animation is handled by the npc, not Irrlicht
 
-    NPC173::baseNode = irrSmgr->addMeshSceneNode(irrSmgr->getMesh("GFX/NPCs/173_2.b3d"));
+    NPC173::baseNode = irrSmgr->addMeshSceneNode(irrSmgr->getMesh("GFX/npcs/173_2.b3d"));
 
     NPC173::baseNode->setScale(irr::core::vector3df(1.3*RoomScale));
 
@@ -454,8 +454,8 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 
     setupForNormalsLighting(NPC173::baseNode,true);
 
-    NPC173::baseNode->getMaterial(0).setTexture(1, irrDriver->getTexture("GFX/NPCs/173_norm.jpg"));
-    NPC173::baseNode->getMaterial(0).setTexture(2, irrDriver->getTexture("GFX/NPCs/173_Spec.jpg"));
+    NPC173::baseNode->getMaterial(0).setTexture(1, irrDriver->getTexture("GFX/npcs/173_norm.jpg"));
+    NPC173::baseNode->getMaterial(0).setTexture(2, irrDriver->getTexture("GFX/npcs/173_Spec.jpg"));
 
 	mainPlayer = new Player(this,irrSmgr,dynamics,irrReceiver);
 
@@ -504,16 +504,16 @@ World::World(unsigned int width,unsigned int height,bool fullscreen) {
 	irrDevice->getCursorControl()->setVisible(false);
 	irrDevice->getCursorControl()->setPosition((irr::s32)mainWidth/2,(irr::s32)mainHeight/2);
 
-    irr::scene::IMesh* mesh1 = irrSmgr->getMesh("GFX/NPCs/scp-066.b3d");
+    irr::scene::IMesh* mesh1 = irrSmgr->getMesh("GFX/npcs/scp-066.b3d");
 
     testNode = irrSmgr->addMeshSceneNode(mesh1);
 
     testNode->setScale(irr::core::vector3df(2.1*RoomScale));
 
-    testNode->getMaterial(0).setTexture(1, irrDriver->getTexture("GFX/NPCs/scp-066_normal.png"));
-    testNode->getMaterial(0).setTexture(2, irrDriver->getTexture("GFX/NPCs/scp-066_specular.png"));
-    testNode->getMaterial(1).setTexture(1, irrDriver->getTexture("GFX/NPCs/scp-066_normal.png"));
-    testNode->getMaterial(1).setTexture(2, irrDriver->getTexture("GFX/NPCs/scp-066_specular.png"));
+    testNode->getMaterial(0).setTexture(1, irrDriver->getTexture("GFX/npcs/scp-066_normal.png"));
+    testNode->getMaterial(0).setTexture(2, irrDriver->getTexture("GFX/npcs/scp-066_specular.png"));
+    testNode->getMaterial(1).setTexture(1, irrDriver->getTexture("GFX/npcs/scp-066_normal.png"));
+    testNode->getMaterial(1).setTexture(2, irrDriver->getTexture("GFX/npcs/scp-066_specular.png"));
     setupForNormalsLighting(testNode,true);
     testNode->setVisible(false);
 

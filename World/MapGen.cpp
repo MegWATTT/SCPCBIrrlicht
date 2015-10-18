@@ -969,18 +969,18 @@ void World::createMap(unsigned char zone) {
 									}
                                     irr::core::vector3df roomPos(x*204.8f*RoomScale,0,y*204.8f*RoomScale);
 
-                                    irr::scene::IAnimatedMeshSceneNode* franklin = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/NPCs/classd.b3d"));
+                                    irr::scene::IAnimatedMeshSceneNode* franklin = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/npcs/classd.b3d"));
                                     franklin->setMaterialType(plainLightShader);
                                     for (unsigned int i=0;i<franklin->getMaterialCount();i++) {
                                         franklin->getMaterial(i).Filter = 1;
                                     }
                                     franklin->setScale(irr::core::vector3df(0.072f,0.072f,0.072f));
-                                    franklin->setMaterialTexture(0,irrDriver->getTexture("GFX/NPCs/scientist2.jpg"));
+                                    franklin->setMaterialTexture(0,irrDriver->getTexture("GFX/npcs/scientist2.jpg"));
                                     franklin->setRotation(irr::core::vector3df(0.f,180.f,0.f));
                                     franklin->setAnimationSpeed(0.f);
                                     setupForPlainLighting(franklin);
                                     setupForHWSkinning(static_cast<irr::scene::IAnimatedMesh*>(franklin->getMesh()));
-                                    irr::scene::IAnimatedMeshSceneNode* ulgrin = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/NPCs/guard.b3d"));
+                                    irr::scene::IAnimatedMeshSceneNode* ulgrin = irrSmgr->addAnimatedMeshSceneNode(irrSmgr->getMesh("GFX/npcs/guard.b3d"));
                                     ulgrin->setScale(irr::core::vector3df(0.6f,0.6f,0.6f));
                                     ulgrin->setRotation(irr::core::vector3df(-90.f,0.f,0.f));
                                     ulgrin->setAnimationSpeed(0.f);

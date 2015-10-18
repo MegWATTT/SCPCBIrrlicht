@@ -258,7 +258,7 @@ public:
 				_set(c);
 				return *this;
 			}
-			
+
 			//! Increments the value by 1.
 			//! \return Myself.
 			_ustring16_iterator_access& operator++()
@@ -393,7 +393,7 @@ public:
 					return unicode::toUTF32(a[pos], a[pos + 1]);
 				}
 			}
-			
+
 			//! Sets a uchar32_t at our current position.
 			void _set(uchar32_t c)
 			{
@@ -437,7 +437,7 @@ public:
 	class _ustring16_const_iterator : public std::iterator<
 		std::bidirectional_iterator_tag,	// iterator_category
 		access,								// value_type
-		ptrdiff_t,							// difference_type
+		std::ptrdiff_t,							// difference_type
 		const access,						// pointer
 		const access						// reference
 	>
@@ -447,7 +447,7 @@ public:
 	{
 		public:
 			typedef _ustring16_const_iterator _Iter;
-			typedef std::iterator<std::bidirectional_iterator_tag, access, ptrdiff_t, const access, const access> _Base;
+			typedef std::iterator<std::bidirectional_iterator_tag, access, std::ptrdiff_t, const access, const access> _Base;
 			typedef const access const_pointer;
 			typedef const access const_reference;
 
@@ -736,7 +736,7 @@ public:
 			typedef typename _Base::distance_type distance_type;
 			typedef access pointer;
 			typedef access reference;
-			
+
 			using _Base::pos;
 			using _Base::ref;
 
@@ -2034,7 +2034,7 @@ public:
 
 		// TODO: Check for near overflow values.
 		//if (begin > ustring16<TAlloc>::npos - length)
-		
+
 		// Clamp to the string length.
 		if ((length + begin) > len)
 			length = len - begin;
@@ -2115,7 +2115,7 @@ public:
 	}
 #endif
 
-	
+
 	//! Appends a number to this ustring16.
 	//! \param c Number to append.
 	//! \return A reference to our current string.
@@ -2247,7 +2247,7 @@ public:
 
 			return *this;
 		}
-		
+
 		// Determine the delta.
 		size_t delta = replace_size - other_size;
 

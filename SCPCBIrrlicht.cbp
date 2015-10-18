@@ -58,6 +58,55 @@
 					<Add library="OpenAL-Soft\libOpenAL32.dll.a" />
 				</Linker>
 			</Target>
+			<Target title="Debug_Linux">
+				<Option output="bin/Debug/SCPCBIrrlicht" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="Irrlicht/include" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="/usr/include/bullet" />
+				</Compiler>
+				<Linker>
+					<Add library="libvorbis" />
+					<Add library="libogg" />
+					<Add library="libvorbisfile" />
+					<Add library="libopenal" />
+					<Add library="libBulletCollision" />
+					<Add library="libBulletDynamics" />
+					<Add library="libLinearMath" />
+					<Add library="Irrlicht/lib/Linux/libIrrlicht.so" />
+					<Add library="libfreetype" />
+				</Linker>
+			</Target>
+			<Target title="Release_Linux">
+				<Option output="bin/Release/SCPCBIrrlicht" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="Irrlicht/include" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="/usr/include/bullet" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libvorbis" />
+					<Add library="libogg" />
+					<Add library="libvorbisfile" />
+					<Add library="libopenal" />
+					<Add library="libBulletCollision" />
+					<Add library="libBulletDynamics" />
+					<Add library="libLinearMath" />
+					<Add library="Irrlicht/lib/Linux/libIrrlicht.so" />
+					<Add library="libfreetype" />
+				</Linker>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
